@@ -1,0 +1,47 @@
+.clock-frame {
+  width: 100%;
+  padding: 300px;
+}
+
+.clock {
+  width: 60%;
+  height: 60%;
+  margin: 40px auto;
+  position: relative;
+}
+
+#second-hand {
+  animation: rotation-s2 60s linear infinite;
+  background-color: gray;
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  right: calc(50% - 2px);
+  top: calc(50% - 2px);
+  transform-origin: calc(100% - 2px) center;
+  width: 22%;
+}
+
+#minute-hand {
+  animation: rotation-m2 3600s linear infinite;
+  background-color: black;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  right: calc(50% - 5px);
+  top: calc(50% - 5px);
+  transform-origin: calc(100% - 5px) center;
+  width: 20%;
+}
+
+#hour-hand {
+  animation: rotation-h2 86400s linear infinite;
+  background-color: black;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  right: calc(50% - 5px);
+  top: calc(50% - 5px);
+  transform-origin: calc(100% - 5px) center;
+  width: 12.5%;
+}
